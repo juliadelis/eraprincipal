@@ -1,0 +1,50 @@
+.bg {
+  background-image: url(../../public/images/bg-hero.png);
+  background-repeat: no-repeat;
+  width: 100vw;
+  position: relative;
+  height: 586px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+  .Container {
+    max-width: 1440px;
+    padding: 4rem;
+    font-family: "GalanoGrotesque";
+    font-weight: 600;
+
+    .containerTitles {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-transform: uppercase;
+
+      .titleL {
+        color: white;
+        font-size: 1.8rem;
+        width: 20%;
+        font-weight: 600;
+      }
+
+      .titleR {
+        color: white;
+        font-size: 1.8rem;
+        text-align: end;
+        width: 20%;
+        font-weight: 600;
+      }
+      .circle {
+        background-image: url(../../public/images/circle-era.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: fit-content;
+        width: fit-content;
+        position: relative;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
