@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 
 import Image from "next/image";
 
@@ -14,8 +14,10 @@ const HeroSection = () => {
           <div className={styles.circle}>
             <Image
               src="./Logo_Amarelo_Azul-Claro.svg"
+              className={styles.logoAmarelo}
               height={500}
               width={500}
+              alt="logo"
             />
           </div>
           <h2 className={styles.titleR}>Comunicação entre dimensões</h2>

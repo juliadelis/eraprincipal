@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.bg {
+  background-color: $color-neutral-black;
+  height: 100vh;
+  width: 100vw;
+
+  .body,
+  .mask {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mask {
+    mask-image: url("../../public/mask.svg");
+    background-color: $color-orange-primary;
+    mask-repeat: no-repeat;
+    mask-size: 40px;
+    position: absolute;
+  }
+}

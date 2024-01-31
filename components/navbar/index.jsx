@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
-import styles from "./style.module.css";
+import styles from "./style.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "../menuOverlay/MenuOverlay";
 import { NAV_LINKS } from "@/constants/index";
 
@@ -30,13 +29,18 @@ const Navbar = () => {
             <button
               onClick={() => setNavbarOpen(true)}
               className={styles.botaoHamburguer}>
-              <Image src="/menu-hamburguer.svg" height={20} width={20} />
+              <Image
+                src="/menu-hamburguer.svg"
+                height={20}
+                width={20}
+                alt="open"
+              />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
               className={styles.botaoHamburguer}>
-              <Image src="/cruz.svg" height={18} width={19} />
+              <Image src="/cruz.svg" height={18} width={19} alt="close" />
             </button>
           )}
         </div>

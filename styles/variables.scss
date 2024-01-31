@@ -1,0 +1,42 @@
+$color-purple-primary: #a842f9;
+$color-orange-primary: #f84609;
+$color-blue-primary: #1a54e8;
+$color-yellow-primary: #faff1d;
+
+$color-purple-secundary: #bf92ea;
+$color-orange-secundary: #f87521;
+$color-blue-secundary: #3bc2e2;
+$color-yellow-secundary: #d2ff1d;
+
+$color-neutral-black: #0b0b0c;
+$color-neutral-white: #fff1f1;
+
+$spacing-quarck: 4px;
+$spacing-nano: 8px;
+$spacing-xxxs: 12px;
+$spacing-xxs: 16px;
+$spacing-xs: 24px;
+$spacing-sm: 32px;
+$spacing-md: 40px;
+$spacing-lg: 48px;
+$spacing-xl: 80px;
+$spacing-xxl: 120px;
+$spacing-xxxl: 160px;
+$spacing-giant: 200px;
+
+$transition: 0.35 ease;
+
+@mixin Container {
+  max-width: 1440px;
+  padding: $spacing-xs $spacing-lg;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "GalanoGrotesque";
+  font-weight: 600;
+
+  @media (max-width: 997px) {
+    padding: $spacing-xs $spacing-sm;
+  }
+}

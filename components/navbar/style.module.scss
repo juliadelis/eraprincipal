@@ -1,18 +1,12 @@
+@import "../../styles/variables.scss";
+
 .NavBar {
   background-color: #fff1f1;
   height: auto;
   margin: auto;
 
   .Container {
-    max-width: 1440px;
-    padding: 25px 4rem;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "GalanoGrotesque";
-    font-weight: 600;
-
+    @include Container;
     .menu {
       display: flex;
       gap: 30px;
@@ -40,8 +34,7 @@
 @media (max-width: 997px) {
   .NavBar {
     .Container {
-      padding: 25px 30px;
-
+      @include Container;
       .menu {
         visibility: hidden;
         display: none;

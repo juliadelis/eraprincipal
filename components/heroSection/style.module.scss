@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   width: 100vw;
   position: relative;
-  height: 586px;
+  height: 90vh;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -38,12 +38,56 @@
         background-image: url(../../public/images/circle-era.png);
         background-repeat: no-repeat;
         background-position: center;
-        height: fit-content;
-        width: fit-content;
-        position: relative;
+        height: 60%;
         width: 60%;
+
         display: flex;
         justify-content: center;
+
+        .logoAmarelo {
+          height: 500px;
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 997px) {
+  .bg {
+    .Container {
+      padding: 25px 30px;
+      .containerTitles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: uppercase;
+
+        .titleL {
+          font-size: 1.5rem;
+          width: 90%;
+          padding: 30px 0;
+          text-align: center;
+        }
+
+        .titleR {
+          color: white;
+          font-size: 1.5rem;
+          text-align: center;
+          width: 90%;
+          padding: 30px 0;
+        }
+        .circle {
+          height: 100%;
+          width: 300px;
+          display: flex;
+          justify-content: center;
+          background-size: cover;
+          .logoAmarelo {
+            height: 200px;
+            width: 200px;
+          }
+        }
       }
     }
   }
