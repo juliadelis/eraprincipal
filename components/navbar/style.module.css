@@ -1,0 +1,55 @@
+.NavBar {
+  background-color: #fff1f1;
+  height: auto;
+  margin: auto;
+
+  .Container {
+    max-width: 1440px;
+    padding: 25px 4rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "GalanoGrotesque";
+    font-weight: 600;
+
+    .menu {
+      display: flex;
+      gap: 30px;
+
+      .itemMenu {
+        cursor: pointer;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #0b0b0c;
+      }
+    }
+
+    .menuHamburguer {
+      visibility: hidden;
+      display: none;
+      .botaoHamburguer {
+        background: none !important;
+        border-radius: 0.25rem;
+        padding: 0.5rem 0.75rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 997px) {
+  .NavBar {
+    .Container {
+      padding: 25px 30px;
+
+      .menu {
+        visibility: hidden;
+        display: none;
+      }
+      .menuHamburguer {
+        display: block;
+        visibility: visible;
+      }
+    }
+  }
+}
