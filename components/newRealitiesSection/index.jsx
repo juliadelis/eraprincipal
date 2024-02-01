@@ -37,6 +37,7 @@ const NewRealitiesSection = () => {
             width={600}
             height={600}
             alt="new principles"
+            className={styles.newPrinciples}
           />
         </div>
       </motion.div>
@@ -47,6 +48,14 @@ const NewRealitiesSection = () => {
             width={600}
             height={600}
             alt="new realities"
+            className={styles.newRealities}
+          />
+          <Image
+            src="/images/newPrinciples.svg"
+            width={600}
+            height={600}
+            alt="new realities"
+            className={styles.newPrinciplesMobile}
           />
         </div>
       </div>

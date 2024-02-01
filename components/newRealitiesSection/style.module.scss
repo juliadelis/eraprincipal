@@ -1,5 +1,14 @@
 @import "../../styles/variables.scss";
 
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
 .bg {
   background-color: $color-neutral-black;
   height: 100vh;
@@ -12,6 +21,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    .newPrinciplesMobile {
+      display: none;
+      visibility: hidden;
+    }
   }
   .mask {
     mask-image: url("../../public/mask.svg");
@@ -19,5 +32,54 @@
     mask-repeat: no-repeat;
     mask-size: 40px;
     position: absolute;
+  }
+
+  @media (max-width: 997px) {
+    .body,
+    .mask {
+      .newPrinciples,
+      .newRealities {
+        width: 300px;
+        height: 300px;
+      }
+      .newPrinciplesMobile {
+        display: block;
+        visibility: visible;
+        width: 300px;
+        height: 300px;
+
+        @include keyframes(fadeReverse) {
+          0% {
+            opacity: 0;
+          }
+          30%,
+          60% {
+            opacity: 1;
+          }
+
+          100% {
+            opacity: 0;
+          }
+        }
+        @include animate(fadeReverse, 5s, ease-in, 1000);
+      }
+
+      .newRealities {
+        @include keyframes(fade) {
+          0% {
+            opacity: 1;
+          }
+          30%,
+          60% {
+            opacity: 0;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+        @include animate(fade, 5s, ease-in, 1000);
+      }
+    }
   }
 }

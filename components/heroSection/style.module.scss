@@ -46,7 +46,7 @@
         display: flex;
         justify-content: center;
         transition: width 0.3s ease-out;
-        transition: background-image 0.3s ease;
+        transition: all 0.3s ease;
         .logoAmarelo {
           height: 500px;
           width: 500px;
@@ -71,6 +71,7 @@
   @media (max-width: 997px) {
     .Container {
       padding: 25px 30px;
+      display: flex;
       .containerTitles {
         display: flex;
         flex-direction: column;
