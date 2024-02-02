@@ -1,0 +1,92 @@
+@import "../../styles/variables.scss";
+.section {
+  background-image: url("../../public/images/bg-era.png");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 25%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  background-color: $color-neutral-black;
+  .Container {
+    @include Container;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .body {
+      h2 {
+        margin-left: 8vw;
+        margin-top: 10px;
+        text-transform: uppercase;
+        font-size: 48px;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 17px;
+        text-transform: uppercase;
+        font-weight: 300;
+
+        margin-left: 8vw;
+        width: 60%;
+        line-height: 150%;
+        strong {
+          font-weight: 500;
+        }
+      }
+    }
+    .images {
+      display: flex;
+      width: 100%;
+
+      position: relative;
+
+      span {
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: auto;
+      }
+
+      .imageContainer {
+        position: absolute;
+
+        img {
+          object-fit: cover;
+          border-radius: 36px;
+        }
+
+        &:nth-of-type(1) {
+          left: 2vw;
+          top: 10vh;
+          height: 80vh;
+          width: 28vw;
+          border-radius: 36px;
+          z-index: 1;
+        }
+
+        &:nth-of-type(2) {
+          left: 23vw;
+          top: 41vh;
+
+          height: 40vh;
+
+          width: 32vw;
+          border-radius: 36px;
+          z-index: 2;
+        }
+
+        &:nth-of-type(3) {
+          left: 150%;
+
+          top: 49vh;
+
+          height: 50vh;
+
+          width: 28vw;
+          border-radius: 36px;
+          z-index: 3;
+        }
+      }
+    }
+  }
+}
