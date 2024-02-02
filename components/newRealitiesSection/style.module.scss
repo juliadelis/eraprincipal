@@ -35,50 +35,62 @@
   }
 
   @media (max-width: 997px) {
-    .body,
     .mask {
+      display: none;
       .newPrinciples,
       .newRealities {
         width: 300px;
         height: 300px;
       }
-      .newPrinciplesMobile {
-        display: block;
-        visibility: visible;
-        width: 300px;
-        height: 300px;
+    }
+    .body {
+      .bodyMobile {
+        position: relative;
+        .newPrinciplesMobile {
+          display: block;
+          visibility: visible;
+          width: 300px;
+          height: 300px;
+          position: absolute;
+          top: 0;
 
-        @include keyframes(fadeReverse) {
-          0% {
-            opacity: 0;
-          }
-          30%,
-          60% {
-            opacity: 1;
-          }
+          @include keyframes(fadeReverse) {
+            0%,
+            30% {
+              opacity: 0;
+            }
+            40%,
+            60% {
+              opacity: 1;
+            }
 
-          100% {
-            opacity: 0;
+            70%,
+            100% {
+              opacity: 0;
+            }
           }
+          @include animate(fadeReverse, 5s, ease-in, 1000);
         }
-        @include animate(fadeReverse, 5s, ease-in, 1000);
-      }
+        .newRealities {
+          width: 300px;
+          height: 300px;
+          @include keyframes(fade) {
+            0%,
+            30% {
+              opacity: 1;
+            }
+            40%,
+            60% {
+              opacity: 0;
+            }
 
-      .newRealities {
-        @include keyframes(fade) {
-          0% {
-            opacity: 1;
+            70%,
+            100% {
+              opacity: 1;
+            }
           }
-          30%,
-          60% {
-            opacity: 0;
-          }
-
-          100% {
-            opacity: 1;
-          }
+          @include animate(fade, 5s, ease-in, 1000);
         }
-        @include animate(fade, 5s, ease-in, 1000);
       }
     }
   }

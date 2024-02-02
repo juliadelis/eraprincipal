@@ -42,7 +42,7 @@ const NewRealitiesSection = () => {
         </div>
       </motion.div>
       <div className={styles.body}>
-        <div>
+        <div className={styles.bodyMobile}>
           <Image
             src="/images/newRealities.svg"
             width={600}
