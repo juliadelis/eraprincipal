@@ -65,9 +65,8 @@ const EraPrincipleSection = () => {
               <div
                 key={`i_${i}`}
                 ref={(el) => (imagesRef.current[i] = el)}
-                className={styles.imageContainer}
-              >
-                <Image src={image} placeholder="blur" alt="image" fill />
+                className={styles.imageContainer}>
+                <Image src={image} placeholder="blur" alt="image" />
               </div>
             );
           })}

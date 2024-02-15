@@ -89,4 +89,24 @@
       }
     }
   }
+  @media (max-width: 997px) {
+    .Container {
+      flex-direction: column;
+      .body {
+        text-align: center;
+        h2 {
+          margin: 30px auto;
+        }
+        p {
+          width: 90%;
+          margin: auto;
+        }
+        margin: auto;
+      }
+    }
+
+    .imageContainer {
+      display: none;
+    }
+  }
 }

@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+
+.Footer {
+  background-color: $color-neutral-white;
+  .Container {
+    @include Container;
+    padding: $spacing-nano $spacing-lg;
+
+    p {
+      color: $color-neutral-gray;
+      text-transform: uppercase;
+      font-style: italic;
+      font-size: 1rem;
+    }
+  }
+}
