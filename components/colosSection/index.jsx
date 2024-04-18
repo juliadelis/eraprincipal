@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const ColorsSection = () => {
   return (
-    <section className={styles.Section}>
+    <section id="sobreRa" className={styles.Section}>
       {" "}
       <div className={styles.Container}>
         <div className={styles.Camisa}>

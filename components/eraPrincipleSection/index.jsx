@@ -56,8 +56,8 @@ const EraPrincipleSection = () => {
   }, []);
 
   return (
-    <section className={styles.section}>
-      <div id="sobreEra" className={styles.Container}>
+    <section id="sobreEra"  className={styles.section}>
+      <div  className={styles.Container}>
         <div className={styles.images}>
           <span>onde o invisível é visível</span>
           {images.map((image, i) => {

@@ -39,4 +39,26 @@
       }
     }
   }
+  @media (max-width: 997px) {
+    .Container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .Camisa {
+        width: 100%;
+        display: flex;
+      }
+      .text {
+        width: 100%;
+        text-align: center;
+        h2 {
+          margin: 30px auto;
+        }
+        p {
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+  }
 }
