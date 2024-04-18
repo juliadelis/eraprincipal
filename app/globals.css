@@ -94,8 +94,8 @@
 }
 @font-face {
   font-family: "GalanoGrotesque";
-  src: url("./../public/fonts/GalanoGrotesque-medium.woff2") format("woff2"),
-    url("./../public/fonts/GalanoGrotesque-medium.woff") format("woff");
+  src: url("./../public/fonts/GalanoGrotesque-Medium.woff2") format("woff2"),
+    url("./../public/fonts/GalanoGrotesque-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
