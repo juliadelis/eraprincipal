@@ -35,6 +35,8 @@
   }
 
   @media (max-width: 997px) {
+    height: 80vh;
+
     .mask {
       display: none;
       .newPrinciples,
@@ -69,7 +71,7 @@
               opacity: 0;
             }
           }
-          @include animate(fadeReverse, 5s, ease-in, 1000);
+          @include animate(fadeReverse, 3s, ease-in, 1000);
         }
         .newRealities {
           width: 300px;
@@ -89,7 +91,7 @@
               opacity: 1;
             }
           }
-          @include animate(fade, 5s, ease-in, 1000);
+          @include animate(fade, 3s, ease-in, 1000);
         }
       }
     }

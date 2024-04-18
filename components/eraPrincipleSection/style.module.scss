@@ -91,9 +91,11 @@
     }
   }
   @media (max-width: 997px) {
+    height: 50vh;
     .Container {
       flex-direction: column;
       .body {
+        margin-top: -150px;
         width: 100% !important;
         text-align: center;
         h2 {
