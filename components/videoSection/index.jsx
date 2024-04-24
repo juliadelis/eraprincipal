@@ -3,44 +3,9 @@ import React, { useRef, useEffect, useState } from "react";
 import styles from "./style.module.scss";
 
 const VideoSection = () => {
-  // const videoRef = useRef(null);
-  // const [isInView, setIsInView] = useState(false);
   const container = useRef(null);
   const stickyMask = useRef(null);
   const [easedScrollProgress, setEasedScrollProgress] = useState(0);
-
-  // useEffect(() => {
-  //   const options = {
-  //     root: null,
-  //     rootMargin: "0px",
-  //     threshold: 0.5, // Change this threshold according to your requirement
-  //   };
-
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         setIsInView(true);
-  //       } else {
-  //         setIsInView(false);
-  //       }
-  //     });
-  //   }, options);
-  //   if (videoRef.current) {
-  //     observer.observe(videoRef.current);
-  //   }
-
-  //   return () => {
-  //     if (videoRef.current) {
-  //       observer.unobserve(videoRef.current);
-  //     }
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   if (isInView) {
-  //     videoRef.current.autoPlay = true;
-  //   }
-  // }, [isInView]);
 
   useEffect(() => {
     const handleScroll = () => {
