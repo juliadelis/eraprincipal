@@ -9,6 +9,7 @@ import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
 
 import styles from "./page.module.css";
+import VideoMobile from "@/components/videomobile";
 
 export default function Home() {
   useEffect(() => {
@@ -26,6 +27,7 @@ export default function Home() {
         <NewRealitiesSection />
         <EraPrincipleSection />
         <VideoSection />
+        <VideoMobile />
         <ColorsSection />
       </div>
     </>

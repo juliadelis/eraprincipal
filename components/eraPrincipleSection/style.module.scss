@@ -91,7 +91,7 @@
     }
   }
   @media (max-width: 997px) {
-    height: 50vh;
+    height: fit-content;
     .Container {
       flex-direction: column;
       .body {

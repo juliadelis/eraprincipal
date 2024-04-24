@@ -10,4 +10,7 @@
     border-radius: 700px;
     mix-blend-mode: difference;
   }
+  @media (max-width: 997px) {
+    display: none;
+  }
 }

@@ -1,0 +1,24 @@
+@import "../../styles/variables.scss";
+
+.section {
+  display: none;
+  @media (max-width: 997px) {
+    display: flex;
+
+    overflow: hidden;
+
+    .container {
+      height: fit-content;
+      width: 100vw;
+      position: relative;
+      background-color: $color-neutral-black;
+
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 20;
+      }
+    }
+  }
+}

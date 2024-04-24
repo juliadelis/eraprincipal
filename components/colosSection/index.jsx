@@ -1,12 +1,30 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import GradientCursor from "./cursor";
 
 const ColorsSection = () => {
+  const [windowWidth, setWindowWidth] = useState(null);
   const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    // Set initial window width
+    setWindowWidth(window.innerWidth);
+
+    // Event listener to update window width when the window is resized
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup function to remove event listener when component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <section id="sobreRa" className={styles.Section}>
       <div className={styles.Container}>
@@ -45,7 +63,7 @@ const ColorsSection = () => {
           </p>
         </div>
 
-        <GradientCursor isActive={isActive} />
+        {windowWidth >= 997 && <GradientCursor isActive={isActive} />}
       </div>
     </section>
   );

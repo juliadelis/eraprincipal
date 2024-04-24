@@ -41,6 +41,8 @@
     }
   }
   @media (max-width: 997px) {
+    height: 80vh;
+    overflow: hidden;
     .Container {
       flex-direction: column;
       justify-content: center;
