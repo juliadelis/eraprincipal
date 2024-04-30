@@ -27,7 +27,7 @@ export default function Home() {
         <NewRealitiesSection />
         <EraPrincipleSection />
         <VideoSection />
-        <VideoMobile />
+        {/* <VideoMobile /> */}
         <ColorsSection />
       </div>
     </>
